@@ -1,0 +1,483 @@
+body {
+    background-color: rgb(32, 32, 32);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+/*styling the header*/
+header {
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-bottom: 50px;
+}
+header > div {
+    width: 33.33%;
+    height: 75px;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    float: left;
+}
+header .col1 > h2 {
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    border-radius: 100%;
+    font-size: 35px;
+    text-align: center;
+    padding: 0 8px;
+    margin-right: 20px;
+}
+header .col1 > h3 {
+    font-size: 25px;
+    padding: 0 20px;
+
+}
+header .col1 > i {
+    font-size: 24px;
+    padding-right: 10px;
+}
+header .col2 {
+    justify-content: center;
+}
+
+header .searchBox {
+    position: relative;
+}
+header .searchBox > input {
+    height: 30px;
+    border: none;
+    background-color: rgb(59, 59, 59);
+    border-radius: 30px;
+    padding: 10px;
+    width: 250px;
+}
+header .searchBox > input::placeholder {
+    color: #ffffff;
+    padding-left: 20px;
+}
+header .searchBox > i {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+header .col3 {
+    justify-content: flex-end;
+
+}
+
+header .col3 > div img {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+header .col3 > div {
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+    border-radius: 40%;
+    padding: 5px;
+    margin-right: 40px;
+    display: flex;
+}
+header .col3 > i {
+    font-size: 24px;
+    margin-right: 20px;
+}
+header .col3 > img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+ header * > i {
+    color: #c7c6c6;
+ }
+/*styling the Top Div*/
+.top {
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+.top > div {
+    width: 50%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    float: left;
+}
+.top > .topcol1 .material-symbols-outlined {
+    color: black;
+    background-color: rgb(255, 236, 172);
+    padding: 8px;
+    border-radius: 100%;
+    margin-right: 50px;
+}
+.top .topcol1 h4 {
+    display: flex;
+}
+.top .topcol1 h5 {
+    border: solid;
+    border-radius: 100%;
+    padding: 2px;
+    border-width: 1px;
+    font-size: 10px;
+    margin-right: 2px;
+    color: rgb(212, 212, 212);
+    border-color: rgb(212, 212, 212);
+}
+.top .topcol1 h4 {
+    font-size: 15px;
+    margin-right: 25px;
+    font-weight: 100;
+}
+.top .topcol2 {
+    justify-content: flex-end;
+    display: flex;
+}
+.top .topcol2 > div {
+    align-items: center;
+    background-color: rgb(59, 59, 59);
+    padding: 0 15px;
+    margin-right: 40px;
+    display: flex;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+.top .topcol2 > div .fa-calendar {
+    padding-right: 10px;
+    color: #c7c6c6;
+}
+.top .topcol2 > div > h5 {
+    padding-right: 5px;
+}
+.top .topcol2 > div .date {
+    padding-right: 20px;
+    font-weight: 100;
+    color: #dbdbdb;
+}
+.top .topcol2 > i {
+    color: #c7c6c6;
+    padding-top: 10px;
+    margin-left: 25px;
+}
+.top > .topcol2 .fa-plus-square-o {
+    color: black;
+    background-color: rgb(255, 236, 172);
+    padding: 8px;
+    border-radius: 100%;
+}
+/*styling the .SIDE+MAIN section*/
+.sidemain {
+    width: 100%;
+    display: flex;
+}
+.sidemain > div {
+    align-items: center;
+}
+.sidemain > .side {
+    align-items: center;
+    float: left;
+    width: 8%;
+    padding: 0;
+}
+.sidemain > .main {
+    align-items: center;
+    float: left;
+    width: 92%;
+    padding: 15px 0 0 10px;
+}
+.sidemain .side > ul {
+    list-style-type: none;
+}
+.sidemain .side > ul > li > i {
+    color: #ffffff; !important
+}
+.sidemain .side > ul > li .top { 
+    padding-bottom: 20px;
+}
+.sidemain .side > ul > li .down {
+    padding-top: 120px;
+}
+.sidemain .main .maintop {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+.sidemain .main .maintop > div {
+    width: 33%;
+    margin-right: 30px;
+    height: 300px;
+    float: left;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 25px;
+}
+.sidemain .main .maintop > div .dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.sidemain .main .maintop > div .dots > h4, i {
+    color: black;
+    font-weight: bold;
+}
+.sidemain .main .maintop .card1 {
+    background-color: rgb(237, 255, 249); !important
+}
+.sidemain .main .maintop > div .listgroup {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgb(168, 218, 218);
+    margin-bottom: 15px;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+.sidemain .main .maintop > div .listgroup > p, span, h5 {
+    color: black;
+}
+.sidemain .main .maintop > div .listgroup p > span {
+    padding-right: 4px;
+}
+.sidemain .main .maintop > div .listgroup > h5 {
+    background-color: rgb(237, 255, 249);
+    padding: 3px 6px;
+    border-radius: 20px;
+}
+.sidemain .main .maintop .card2 {
+    background-color: rgb(179, 253, 229); !important
+    overflow: hidden;
+}
+.sidemain .main .maintop .card2 > h5, h1 {
+    color: black;
+    text-align: center;
+    line-height: 0;
+}
+.sidemain .main .maintop .card2 > h5 {
+    margin-top: 30px;
+    font-weight: 200;
+}
+.sidemain .main .maintop .card2 > h1 {
+    padding-top: 5px;
+}
+.sidemain .main .maintop .card2 .analytics-card {
+    height: 140px;
+    width: 250px;
+    background-color: rgb(71, 247, 159);
+    border-radius: 200px 200px 0 0;
+    text-align: center;
+    margin-left: 45px;
+    justify-content: center;
+    display: flex;
+    margin-top: 53px;
+    padding-top: 60px;
+}
+.sidemain .main .maintop .card2 .analytics-card .balance {
+    background-color: #cdff94af;
+    padding: 0 5px 5px 5px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+.sidemain .main .maintop .card2 .analytics-card .balance .price {
+    color: black;
+    line-height: 0;
+    padding-bottom: 2px;
+    font-size: medium;
+}
+.sidemain .main .maintop .card2 .analytics-card .balance .assets {
+    color: rgb(2, 126, 57);
+    line-height: 0;
+    font-size: small;
+}
+.sidemain .main .maintop .card3 {
+    background-color: rgb(192, 192, 192);
+}
+.sidemain .main .maintop .card3 .camp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.sidemain .main .maintop .card3 .camp > h5 {
+    margin: 0;
+}
+.sidemain .main .maintop .card3 .camp ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.sidemain .main .maintop .card3 .camp ul li {
+    display: inline;
+    color: black;
+    padding-left: 25px;
+    line-height: 0;
+}
+.sidemain .main .maintop .card3 > div.camplist{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sidemain .main .maintop .card3 > div.camplist > h5 {
+    border-radius: 100%;
+    padding: 2px 4px;;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 4px;
+    color: #252525;
+    background-color: rgb(179, 253, 229);
+}
+.sidemain .main .maintop .card3 > div.camplist > h4 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #252525;
+    justify-content: flex-start; !important
+}
+.sidemain .main .maintop .card3 > div.camplist p {
+    color: #252525;
+}
+.sidemain .main .mainmiddle {
+    width: 100%;
+    height: 130px;
+    margin: 30px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+}
+.sidemain .main .mainmiddle::-webkit-scrollbar {
+  height: 3px;
+  visibility: hidden;
+}
+/* Track */
+.sidemain .main .mainmiddle::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+.sidemain .main .mainmiddle::-webkit-scrollbar-thumb {
+  background: rgba(92, 92, 92, 0.288);
+  border-radius: 10px;
+}
+.sidemain .main .mainmiddle::-webkit-scrollbar-thumb:hover {
+    background:#858585;
+}
+.sidemain .main .mainmiddle > div {
+    width: 18%;
+    margin-right: 15px;
+    height: 120px;
+    float: left;
+    flex: 0 0 auto;
+    background-color: rgb(59, 59, 59);
+    padding: 15px;
+    border-radius: 30px;
+}
+.sidemain .main .mainmiddle > div .middots {
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    align-items: center;
+    margin-top: -10px;
+}
+.sidemain .main .mainmiddle > div .middots h4 {
+    font-weight: 500;
+    height: 0;
+}
+.sidemain .main .mainmiddle > div .middots i {
+    color: #ffffff;
+    font-weight: 300;
+    height: 0;
+}
+.sidemain .main .mainmiddle h5 {
+    color: #929292;
+    font-weight: 100;
+    display: flex;
+    width: 100%;
+}
+.sidemain .main .mainmiddle > div > h3 {
+    display: block;
+    line-height: 0;
+}
+.sidemain .main .mainmiddle div div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+.sidemain .main .mainmiddle div div h6 {
+    font-size: 15px;
+    color: #929292;
+    font-weight: 100;
+    width: 40%;
+    line-height: 0;
+    justify-content: flex-start;
+}
+.sidemain .main .mainmiddle div div p {
+    font-size: 15px;
+    background-color: #22fc6b;
+    color: #1d1d1d;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: 700;
+    line-height: 0;
+}
+.sidemain .main .mainmiddle div div i {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 0;
+    margin-bottom: -10px;
+}
+.sidemain .main .mainmiddle div div p.red {
+    background-color: rgb(255, 110, 110);
+}
+.sidemain .main .mainbottom {
+    width: 100%;
+    height: 210px;
+    margin: 30px 0;
+    padding-right: 30px;
+    column-gap: 30px;
+    display: flex;
+}
+.sidemain .main .mainbottom > div {
+    width: 50%;
+    height: 200px;
+    float: left;
+    background-color: rgb(255, 221, 194);
+    padding: 20px 20px 0 20px;
+    border-radius: 30px;
+}
+.sidemain .main .mainbottom > div .bottomdots {
+    display: flex;
+    justify-content: space-between;
+    height: 10px;
+    align-items: center;
+}
+.sidemain .main .mainbottom > div .bottomdots > h4, h5, p {
+    color: #252525;
+}
+.sidemain .main .mainbottom > div ul {
+    list-style-type: none;
+    display: block;
+    justify-content: flex-start;
+}
+.sidemain .main .mainbottom > div > ul li {
+    color: #1d1d1d;
+    display: flex;
+    margin-left: -40px;
+}
+.sidemain .main .mainbottom > div > ul li > p {
+    margin-top: -5px;
+    margin-left: 10px;
+}
